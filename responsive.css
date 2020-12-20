@@ -1,0 +1,25 @@
+/*Web development container*/
+
+
+.mobileres {
+    display: none;
+}
+
+.fontsize {
+    font-size: 17px;
+}
+
+.spacingfull {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+
+
+
+.marginauto {
+    display: block ;
+    margin-left: auto ;
+    margin-right: auto ;
+}

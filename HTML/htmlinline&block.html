@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>HTML Inline & Block</title>
+    <link rel="stylesheet" href="#codeandgraphics.css">
+    <link rel="stylesheet" media="screen and (min-width: 1100px)" href="responsive1.css">
+    <style>
+        .sth {
+            position: sticky;
+            top: 4rem;
+            bottom: 40rem;
+            z-index: 1000;
+            height: calc(100vh - 4rem);
+        }
+
+        .overflowy {
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--   Header -->
+
+    <header>
+        <div class="mt-3 ml-3 d-flex">
+            <h2 class="text-primary marginauto">CodeAndGraphics
+            </h2>
+            <!--
+            <hr>
+            <h6 class=" text-uppercase mr-3 mt-4 text-dark erase">The Complete solution for Coding and Graphic Designing</h6>
+-->
+        </div>
+    </header>
+
+    <!--    Navigation bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-dark mr-2 bg-primary rounded-lg " href="htmlintroduction.html">HTML<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light mr-2" href="/CSS/learncss.html">CSS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light mr-2" href="/JS/learnjs.html">JavaScript</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light mr-2" href="/Illustrator/LearnAI.html">Illustrator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light mr-2" href="/Photoshop/LearnPSD.html">Photoshop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light mr-2" href="/PremierePro/LearnPP.html">Premiere Pro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light mr-2" href="/Java/learnjava.html">Java</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light mr-2" href="/C++/Learnc.html">C++</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light mr-2" href="/Python/LearnPython.html">Python</a>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle text-light" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Exercises
+                    </a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <p class="dropdown-item font-weight-bold">Web Development Exercises</p>
+                        <a class="dropdown-item " href="#">HTML</a>
+                        <a class="dropdown-item" href="#">CSS</a>
+                        <a class="dropdown-item" href="#">JavaScript</a>
+                        <p class="dropdown-item font-weight-bold ">Programming Practices</p>
+                        <a class="dropdown-item" href="#">Java</a>
+                        <a class="dropdown-item" href="#">C++</a>
+                        <a class="dropdown-item" href="#">Python</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle text-light" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        More
+                    </a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">BootStrap</a>
+                        <a class="dropdown-item " href="#">SQL</a>
+                        <a class="dropdown-item" href="#">React</a>
+                        <a class="dropdown-item" href="#">Angular</a>
+                        <a class="dropdown-item" href="#">XML</a>
+                        <a class="dropdown-item" href="#">JSON</a>
+                        <a class="dropdown-item" href="#">Web Templates</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <!--                <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search">-->
+                <button class="btn btn-outline-primary my-2 my-sm-0 ml-3" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <!--   Main content side -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 col-xl-2 bd-sidebar col-lg-2 d-md-block bg-light sidebar-fixed collapse position-sticky sth">
+
+                <nav class="sidebar-sticky pt-3 overflowy" style="max-height:calc(110vh - 9rem)">
+                    <ul class="nav flex-column">
+
+                        <li class="nav-item m-n1 font-weight-bold nav-link ">
+                            <h3 data-feather="home">HTML</h3>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link " href="htmlintroduction.html">
+                                <span data-feather="home"></span>HTML Introduction
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link " href="installingeditor.html">
+                                <span data-feather="file"></span>
+                                Installing Editor
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link " href="htmlstructure.html">
+                                <span data-feather="shopping-cart"></span>
+                                HTML Structure
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmlelements.html">
+                                <span data-feather="users"></span>
+                                HTML Elements
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmlheading&paragraph.html">
+                                <span data-feather="bar-chart-2"></span>
+                                HTML Heading &amp; Paragaraphs
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmltextformatting.html">
+                                <span data-feather="bar-chart-2"></span>
+                                HTML Text Formatting
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmlattributes.html">
+                                <span data-feather="bar-chart-2"></span>
+                                HTML Attributes
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmlimg&anchor.html">
+                                <span data-feather="layers"></span>
+                                HTML Img &amp; Anchor tags
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmllist&tables.html">
+                                <span data-feather="layers"></span>
+                                HTML List &amp; Tables
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmlforms.html">
+                                <span data-feather="layers"></span>
+                                HTML Forms 
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link active bg-primary text-white rounded-lg" href="htmlinline&block.html">
+                                <span data-feather="layers"></span>
+                                HTML Inline &amp; Block
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmlid&classes.html">
+                                <span data-feather="layers"></span>
+                                HTML Ids &amp; Classes
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmlentities.html">
+                                <span data-feather="layers"></span>
+                                HTML Entities
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmlsemantictags.html">
+                                <span data-feather="layers"></span>
+                                HTML Semantic Tags
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmlcolors.html">
+                                <span data-feather="layers"></span>
+                                HTML Colors
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmllayout.html">
+                                <span data-feather="layers"></span>
+                                HTML Layout
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmlhead.html">
+                                <span data-feather="layers"></span>
+                                HTML Head
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmlfigureandfigurecaption.html">
+                                <span data-feather="layers"></span>
+                                HTML Figure &amp; Figcaption
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmlresponsive.html">
+                                <span data-feather="layers"></span>
+                                HTML Responsive
+                            </a>
+                        </li>
+                    </ul>
+                    <h5 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted ml-n1o">
+                        <span>Key Concepts (Revision)</span>
+                        <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
+                            <span data-feather="plus-circle"></span>
+                        </a>
+                    </h5>
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmlconcepts1.html">
+                                <span data-feather="file-text"></span>
+                                Concepts 1
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmlconcepts2.html">
+                                <span data-feather="file-text"></span>
+                                Concepts 2
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmlconcepts3.html">
+                                <span data-feather="file-text"></span>
+                                Concepts 3
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmlconcepts4.html">
+                                <span data-feather="file-text"></span>
+                                Concepts 4
+                                <br>
+                                <br>
+                                <br>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">HTML Inline &amp; Block </h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div class="btn-group mr-2">
+                            <a title="HTML Forms" type="button" class="btn btn-lg btn-outline-primary shadow-sm " href="htmlforms.html">Prev &lt;</a>
+                            <a title="HTML Id's & Classes" type="button" class="btn btn-lg btn-outline-primary shadow-sm " href="htmlid&classes.html">Next &gt;</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <p style="font-size:1.3rem">Every HTML elements has a default display value i.e. block and inline.</p><br>
+                <p style="font-size:2rem" class="bg-light p-1">1. Block elements :</p>
+                <p style="font-size:1.3rem">Block level elements always start on a new line and also takes the full width (available)</p> <br>  
+
+                <div class="container border pt-4 pr-3 pb-4 pl-3 mb-5 shadow rounded-lg" style="background-color: #f1f1f1">
+                    <p style="font-size:2rem">Example :</p>
+                    <p style="font-size:1.3rem" class="text-primary border border-primary bg-white pt-3 pb-3 pr-3 pl-3 rounded-sm container">
+                        &lt;p&gt; <span class="text-danger">Paragraph1 </span>&lt;/p&gt; <br>
+                        &lt;p&gt; <span class="text-danger">Paragraph2 </span>&lt;/p&gt; <br>
+                    </p>
+                    <p style="font-size:1.3rem">In above example &lt;p&gt; is block-level element so it will always starts on a new line and takes the full width available.</p>
+                </div>
+                <ul style="font-size: 1.3rem">Some block-level elements :
+                    <li>Heading (&lt;h1&gt;...&lt;h6&gt;)</li>
+                    <li>Paragraph (&lt;p&gt;)</li>
+                    <li>Table (&lt;table&gt;)</li>
+                    <li>HTML List (&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;, &lt;dl&gt;, &lt;dd&gt; and &lt;dt&gt; )</li>
+                    <b>Note : Only that elements are mentioned above which we have discussed yet.</b>
+                </ul>
+                <hr><br>
+                
+                <p style="font-size:2rem" class="bg-light p-1">2. Inline elements :</p>
+                <p style="font-size:1.3rem">Inline level elements does not start on a new line and it only takes up as much width as necessary.</p><br>
+                
+                <div class="container border pt-4 pr-3 pb-4 pl-3 mb-5 shadow rounded-lg" style="background-color: #f1f1f1">
+                    <p style="font-size:2rem">Example :</p>
+                    <p style="font-size: 1.3rem" class="text-primary border border-primary bg-white pt-3 pb-3 pr-3 pl-3 rounded-sm container">
+                        &lt;span&gt; <span class="text-danger"> Inline-level element </span>&lt;/span&gt;
+                    </p>
+                    <p style="font-size: 1.2rem">Note : We have not discussed span element yet.
+                    It is basically used to color a part of text. It is similar as div element but div is a block-level element and span is an inline element.
+                    </p>
+                </div>
+                <ul style="font-size: 1.3rem">Some inline-level elements :
+                    <li>&lt;span&gt;</li>
+                    <li>Image (&lt;img&gt;)</li>
+                    <li>&lt;input&gt;</li>
+                    <li>Bold &amp; Italic(&lt;b&gt; &amp; &lt;i&gt;)</li>
+                    <li>&lt;textarea&gt;</li>
+                    <li>&lt;sup&gt; &amp; &lt;sub&gt;</li>
+                    <li>Anchor (&lt;a&gt;)</li>
+                    <b>Note : Only that elements are mentioned which we have discussed yet.</b>
+                </ul>
+                <br>
+                <div class="btn-toolbar mb-2 mb-md-0">
+                    <div class="btn-group mr-2">
+                        <a title="HTML Forms" type="button" class="btn btn-lg btn-outline-primary shadow-sm " href="htmlforms.html">Prev &lt;</a>
+                        <a title="HTML Id's & Classes" type="button" class="btn btn-lg btn-outline-primary shadow-sm" href="htmlid&classes.html">Next &gt;</a>
+                    </div>
+                </div> <br><br>
+            </main>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body></html>

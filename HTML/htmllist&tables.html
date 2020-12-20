@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>HTML List & Tables</title>
+    <link rel="stylesheet" href="#codeandgraphics.css">
+    <link rel="stylesheet" media="screen and (min-width: 1100px)" href="responsive1.css">
+    <style>
+        .sth {
+            position: sticky;
+            top: 4rem;
+            bottom: 40rem;
+            z-index: 1000;
+            height: calc(100vh - 4rem);
+        }
+
+        .overflowy {
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!--   Header -->
+
+    <header>
+        <div class="mt-3 ml-3 d-flex">
+            <h2 class="text-primary marginauto">CodeAndGraphics
+            </h2>
+            <!--
+            <hr>
+            <h6 class=" text-uppercase mr-3 mt-4 text-dark erase">The Complete solution for Coding and Graphic Designing</h6>
+-->
+        </div>
+    </header>
+
+    <!--    Navigation bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-dark mr-2 bg-primary rounded-lg " href="htmlintroduction.html">HTML<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light mr-2" href="/CSS/learncss.html">CSS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light mr-2" href="/JS/learnjs.html">JavaScript</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light mr-2" href="/Illustrator/LearnAI.html">Illustrator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light mr-2" href="/Photoshop/LearnPSD.html">Photoshop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light mr-2" href="/PremierePro/LearnPP.html">Premiere Pro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light mr-2" href="/Java/learnjava.html">Java</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light mr-2" href="/C++/Learnc.html">C++</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light mr-2" href="/Python/LearnPython.html">Python</a>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle text-light" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Exercises
+                    </a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <p class="dropdown-item font-weight-bold">Web Development Exercises</p>
+                        <a class="dropdown-item " href="#">HTML</a>
+                        <a class="dropdown-item" href="#">CSS</a>
+                        <a class="dropdown-item" href="#">JavaScript</a>
+                        <p class="dropdown-item font-weight-bold ">Programming Practices</p>
+                        <a class="dropdown-item" href="#">Java</a>
+                        <a class="dropdown-item" href="#">C++</a>
+                        <a class="dropdown-item" href="#">Python</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle text-light" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        More
+                    </a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">BootStrap</a>
+                        <a class="dropdown-item " href="#">SQL</a>
+                        <a class="dropdown-item" href="#">React</a>
+                        <a class="dropdown-item" href="#">Angular</a>
+                        <a class="dropdown-item" href="#">XML</a>
+                        <a class="dropdown-item" href="#">JSON</a>
+                        <a class="dropdown-item" href="#">Web Templates</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <!--                <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search">-->
+                <button class="btn btn-outline-primary my-2 my-sm-0 ml-3" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <!--   Main content side -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 col-xl-2 bd-sidebar col-lg-2 d-md-block bg-light sidebar-fixed collapse position-sticky sth">
+
+                <nav class="sidebar-sticky pt-3 overflowy" style="max-height:calc(110vh - 9rem)">
+                    <ul class="nav flex-column">
+
+                        <li class="nav-item m-n1 font-weight-bold nav-link ">
+                            <h3 data-feather="home">HTML</h3>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link " href="htmlintroduction.html">
+                                <span data-feather="home"></span>HTML Introduction
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link " href="installingeditor.html">
+                                <span data-feather="file"></span>
+                                Installing Editor
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmlstructure.html">
+                                <span data-feather="shopping-cart"></span>
+                                HTML Structure
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmlelements.html">
+                                <span data-feather="users"></span>
+                                HTML Elements
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmlheading&paragraph.html">
+                                <span data-feather="bar-chart-2"></span>
+                                HTML Heading &amp; Paragaraphs
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmltextformatting.html">
+                                <span data-feather="bar-chart-2"></span>
+                                HTML Text Formatting
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmlattributes.html">
+                                <span data-feather="bar-chart-2"></span>
+                                HTML Attributes
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmlimg&anchor.html">
+                                <span data-feather="layers"></span>
+                                HTML Img &amp; Anchor tags
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link  active bg-primary text-white rounded-lg" href="htmllist&tables.html">
+                                <span data-feather="layers"></span>
+                                HTML List &amp; Tables
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmlforms.html">
+                                <span data-feather="layers"></span>
+                                HTML Forms 
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmlinline&block.html">
+                                <span data-feather="layers"></span>
+                                HTML Inline &amp; Block
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmlid&classes.html">
+                                <span data-feather="layers"></span>
+                                HTML Ids &amp; Classes
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmlentities.html">
+                                <span data-feather="layers"></span>
+                                HTML Entities
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmlsemantictags.html">
+                                <span data-feather="layers"></span>
+                                HTML Semantic Tags
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmlcolors.html">
+                                <span data-feather="layers"></span>
+                                HTML Colors
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmllayout.html">
+                                <span data-feather="layers"></span>
+                                HTML Layout
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmlhead.html">
+                                <span data-feather="layers"></span>
+                                HTML Head
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmlfigureandfigurecaption.html">
+                                <span data-feather="layers"></span>
+                                HTML Figure &amp; Figcaption
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmlresponsive.html">
+                                <span data-feather="layers"></span>
+                                HTML Responsive
+                            </a>
+                        </li>
+                    </ul>
+                    <h5 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted ml-n1o">
+                        <span>Key Concepts (Revision)</span>
+                        <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
+                            <span data-feather="plus-circle"></span>
+                        </a>
+                    </h5>
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmlconcepts1.html">
+                                <span data-feather="file-text"></span>
+                                Concepts 1
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmlconcepts2.html">
+                                <span data-feather="file-text"></span>
+                                Concepts 2
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmlconcepts3.html">
+                                <span data-feather="file-text"></span>
+                                Concepts 3
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="htmlconcepts4.html">
+                                <span data-feather="file-text"></span>
+                                Concepts 4
+                                <br>
+                                <br>
+                                <br>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">HTML List &amp; Tables </h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div class="btn-group mr-2">
+                            <a title="HTML Image & Anchor" type="button" class="btn btn-lg btn-outline-primary shadow-sm " href="htmlimg&anchor.html">Prev &lt;</a>
+                            <a title="HTML Forms" type="button" class="btn btn-lg btn-outline-primary shadow-sm " href="htmlforms.html">Next &gt;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <p style="font-size: 2rem" class="bg-light p-2">HTML List :</p>
+                <ul style="font-size: 1.3rem" type="circle">
+                    <li>Usage : To group a set of related items in lists</li>
+                </ul>
+
+                <div class="container border pt-4 pr-3 pb-4 pl-3 mb-5 shadow rounded-lg" style="background-color: #f1f1f1">
+                    <p style="font-size:2rem">Example :</p>
+                    <ul style="background-size: cover" class="border border-primary bg-white pt-3 pb-3 pr-3 pl-3 rounded-sm container pl-5">
+                        <li>List 1</li>
+                        <li>List 2</li>
+                        <li>List 3</li>
+                        <li>List 4</li>
+                    </ul>
+                </div>
+                <hr><br>
+
+                <p style="font-size:2rem">1. Unordered list :</p>
+                <li style="font-size:1.3rem">Collection of related items that have no special order or sequence</li>
+                <li style="font-size:1.3rem">Starts with &lt;ul&gt; tag and this will list items using plain bullets</li>
+                <li style="font-size:1.3rem">Each list item starts with the &lt;li&gt; tag</li><br>
+
+
+                <div class="container border pt-4 pr-3 pb-4 pl-3 mb-5 shadow rounded-lg" style="background-color: #f1f1f1">
+                    <p style="font-size:2rem">Example :</p>
+                    <p style="background-size: cover" class="text-primary border border-primary bg-white pt-3 pb-3 pr-3 pl-3 rounded-sm container">
+                        <span class="text-primary" style="font-size : 1.3rem">
+                            &lt;ul&gt; <br>
+                            &emsp; &lt;li&gt; <span class="text-dark">C </span>&lt;/li&gt; <br>
+                            &emsp; &lt;li&gt; <span class="text-dark">C++ </span>&lt;/li&gt; <br>
+                            &emsp; &lt;li&gt; <span class="text-dark">Java </span>&lt;/li&gt;<br>
+                            &emsp; &lt;li&gt; <span class="text-dark">Python </span>&lt;/li&gt; <br>
+                            &lt;/ul&gt; <br>
+                        </span><br>
+                    </p>
+
+                    <p style="font-size:2rem">Preview :</p>
+                    <ul style="background-size: cover" class="border border-primary bg-white pt-3 pr-3 pl-3 rounded-sm container pl-5">
+                        <span style="font-size : 1.3rem">
+                            <li>C</li>
+                            <li>C++</li>
+                            <li>Java</li>
+                            <li>Python</li>
+                        </span><br>
+                    </ul>
+                </div>
+                <p style="font-size:1.8rem">Unordered list Type Attribute :</p>
+                <li style="font-size:1.3rem">The type attribute of the &lt;ul&gt; tag, defines the type of sequence.</li><br>
+                <table class="table table-hover border table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Type Attribute</th>
+                            <th scope="col">Discription/Meaning</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>type="disc"</td>
+                            <td>Sets the list item marker to a bullet (default)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>type="square"</td>
+                            <td>Sets the list item marker to a square</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>type="circle"</td>
+                            <td>Sets the list item marker to a circle</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <hr>
+
+                <p style="font-size:2rem">2. Ordered list :</p>
+                <li style="font-size:1.3rem">Collection of related items that have special order or sequence</li>
+                <li style="font-size:1.3rem">Each list item starts with the &lt;li&gt; tag</li>
+                <li style="font-size:1.3rem">Items will be marked with numbers by default</li><br>
+
+                <div class="container border pt-4 pr-3 pb-4 pl-3 mb-5 shadow rounded-lg" style="background-color: #f1f1f1">
+                    <p style="font-size:2rem">Example :</p>
+                    <p style="background-size: cover" class="text-primary border border-primary bg-white pt-3 pb-3 pr-3 pl-3 rounded-sm container">
+                        <span class="text-primary" style="font-size : 1.3rem">
+                            &lt;ol&gt; <br>
+                            &emsp; &lt;li&gt; <span class="text-dark">C </span>&lt;/li&gt; <br>
+                            &emsp; &lt;li&gt; <span class="text-dark">C++ </span>&lt;/li&gt; <br>
+                            &emsp; &lt;li&gt; <span class="text-dark">Java </span>&lt;/li&gt;<br>
+                            &emsp; &lt;li&gt; <span class="text-dark">Python </span>&lt;/li&gt; <br>
+                            &lt;/ol&gt; <br>
+                        </span><br>
+                    </p>
+
+                    <p style="font-size:2rem">Preview :</p>
+                    <ul style="background-size: cover" class="border border-primary bg-white pt-3 pr-3 pl-3 rounded-sm container">
+                        <ol style="font-size : 1.3rem">
+                            <li>C</li>
+                            <li>C++</li>
+                            <li>Java</li>
+                            <li>Python</li>
+                        </ol><br>
+                    </ul>
+                </div>
+                <p style="font-size:1.8rem">Ordered list Type Attribute :</p>
+                <li style="font-size:1.3rem">The type attribute of the &lt;ol&gt; tag, defines the type of sequence.</li><br>
+                <table class="table table-hover border table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Type Attribute</th>
+                            <th scope="col">Discription/Meaning</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>type="1"</td>
+                            <td>List items will be sequenced with numbers(default)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>type="i"</td>
+                            <td>List items will be sequenced with lowercase roman numbers</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>type="I"</td>
+                            <td>List items will be sequenced with uppercase roman numbers</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>type="A"</td>
+                            <td>List items will be sequenced with uppercase letters</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>type="a"</td>
+                            <td>List items will be sequenced with lowercase letters</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <p class="border shadow white pt-3 pb-3 pr-3 pl-3 rounded-sm " style="background-color: #f1f1f1">
+                    <b style=font-size:1.2rem>Note : You can also use the start attribute in HTML ordered list <br>
+                    </b>
+                    <span class="text-primary p-3" style="font-size:1.3rem">
+                        &lt;ol<span class="text-dark"> type="i" start="4"</span>&gt;
+                    </span>
+                </p><br>
+                <hr>
+
+                <p style="font-size:2rem">3. Defination list :</p>
+                <li style="font-size:1.3rem">Entries are listed like in a dictionary</li>
+                <li style="font-size:1.3rem">Usage : To present a glossary , list of items or any other value list</li>
+                <li style="font-size:1.3rem">Tags: <br>
+                    &emsp; &lt;dl&gt; - Defines the start of list. <br>
+                    &emsp; &lt;dt&gt; - A term <br>
+                    &emsp; &lt;dd&gt; - Term Defination <br>
+                    &emsp; &lt;/dl&gt; - Defines the end of list.
+                </li><br>
+                <div class="container border pt-4 pr-3 pb-4 pl-3 mb-5 shadow rounded-lg" style="background-color: #f1f1f1">
+                    <p style="font-size:2rem">Example :</p>
+                    <p style="background-size: cover" class="text-primary border border-primary bg-white pt-3 pb-3 pr-3 pl-3 rounded-sm container">
+                        <span class="text-primary" style="font-size : 1.3rem">
+                            &lt;dl&gt; <br>
+                            &emsp; &lt;dt&gt; <span class="text-dark">A term (name)</span>&lt;/dt&gt; <br>
+                            &emsp; &lt;dd&gt; <span class="text-dark">Term Defination</span>&lt;/dd&gt; <br>
+                            &emsp; &lt;dt&gt; <span class="text-dark">Java Script</span>&lt;/dt&gt;<br>
+                            &emsp; &lt;dd&gt; <span class="text-dark">Programming language used to make interactive webpages</span>&lt;/dd&gt; <br>
+                            &lt;/dl&gt; <br>
+                        </span><br>
+                    </p>
+
+                    <p style="font-size:2rem">Preview :</p>
+                    <ul style="background-size: cover" class="border border-primary bg-white pt-3 pr-3 pl-3 rounded-sm container ">
+                        <dl style="font-size: 1.3rem">
+                            <dt>A term</dt>
+                            <dd>Term defination</dd>
+                            <dt>Java Script</dt>
+                            <dd>Programming language used to make interactive webpages</dd>
+                        </dl>
+                    </ul>
+                </div>
+                
+                <p class="border shadow white pt-3 pb-3 pr-3 pl-3 rounded-sm " style="background-color: #f1f1f1">
+                    <b>Note : In HTML list nesting is allowed. It means list inside lists. Explore this concept yourself!!</b>
+                </p><br>
+
+                <p style="font-size: 2rem" class="bg-light p-2">HTML Tables :</p>
+                <ul style="font-size: 1.3rem">
+                    <li>An HTML Table is defined with <span class="text-primary">&lt;table&gt;</span> tag</li>
+                    <li>Each table row is defined with <span class="text-primary">&lt;tr&gt;</span>tag</li>
+                    <li>A table header is defined with <span class="text-primary">&lt;th&gt;</span> tag (By default table heading are bold and centered)</li>
+                    <li>A table data cell is defined with <span class="text-primary">&lt;td&gt;</span> tag</li>
+                </ul>
+
+                <div class="container border pt-4 pr-3 pb-4 pl-3 mb-5 shadow rounded-lg" style="background-color: #f1f1f1">
+                    <p style="font-size:2rem">Example :</p>
+                    <p style="background-size: cover" class="text-primary border border-primary bg-white pt-3 pb-3 pr-3 pl-3 rounded-sm container">
+                        <span class="text-primary" style="font-size : 1.3rem">
+                            &lt;table&gt; <br>
+                            &emsp; &lt;tr&gt; <br>
+                            &emsp; &emsp;&lt;th&gt; <span class="text-dark">Name</span>&lt;/th&gt; <br>
+                            &emsp; &emsp;&lt;th&gt; <span class="text-dark">Age</span>&lt;/th&gt; <br>
+                            &emsp; &emsp;&lt;th&gt; <span class="text-dark"> Qualification </span> &lt;/th&gt; <br>
+                            &emsp; &lt;/tr&gt; <br>
+                            &emsp; &lt;tr&gt; <br>
+                            &emsp; &emsp;&lt;td&gt; <span class="text-dark">Rohan</span>&lt;/td&gt; <br>
+                            &emsp; &emsp;&lt;td&gt; <span class="text-dark">26</span>&lt;/td&gt; <br>
+                            &emsp; &emsp;&lt;td&gt; <span class="text-dark">Android Developer</span> &lt;/td&gt; <br>
+                            &emsp; &lt;/tr&gt; <br>
+                            &emsp; &lt;tr&gt; <br>
+                            &emsp; &emsp;&lt;td&gt; <span class="text-dark">Harry</span>&lt;/td&gt; <br>
+                            &emsp; &emsp;&lt;td&gt; <span class="text-dark">20</span>&lt;/td&gt; <br>
+                            &emsp; &emsp;&lt;td&gt; <span class="text-dark">Web &amp; Android developer</span> &lt;/td&gt; <br>
+                            &emsp; &lt;/tr&gt; <br>
+                            &lt;/table&gt;
+                        </span><br>
+                    </p>
+
+                    <p style="font-size:2rem">Preview :</p>
+                    <ul class="border border-primary bg-white  rounded-sm container ">
+                        <table style="width:100%">
+                            <tr>
+                                <th>Name</th>
+                                <th>Age</th>
+                                <th>Qualification</th>
+                            </tr>
+                            <tr>
+                                <td>Rohan</td>
+                                <td>26</td>
+                                <td>Android developer</td>
+                            </tr>
+                            <tr>
+                                    <td> Harry</td>
+                                    <td> 20</td>
+                                    <td> Web &amp; Android developer </td>
+                                  </tr>
+                        </table> <br>
+                    </ul>
+                </div>
+
+                <p class="border shadow white pt-3 pb-3 pr-3 pl-3 rounded-sm " style="background-color: #f1f1f1">
+                    <b>Note : For adding a border for the table CSS border property is used. We will discuss this in CSS tables section. In CSS tables we will explore about colspan and rowspan attribute , Caption for table and styles for table.</b>
+                </p><br>
+
+                <br>
+                <div class="btn-toolbar mb-2 mb-md-0">
+                    <div class="btn-group mr-2">
+                        <a title="HTML mage & Anchor" type="button" class="btn btn-lg btn-outline-primary shadow-sm " href="htmlimg&anchor.html">Prev &lt;</a>
+                        <a title="HTML Forms" type="button" class="btn btn-lg btn-outline-primary shadow-sm " href="htmlforms.html">Next &gt;</a>
+                    </div>
+                </div> <br><br>
+            </main>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+
+</html>
