@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>CSS</title>
+    <link rel="stylesheet" href="#codeandgraphics.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" media="screen and (min-width: 1100px)" href="responsive1.css">
+    <link rel="icon" href="/Images/icon.png" type="image/icon type">
+    <meta name="keywords" content="HTML, CSS, JS, XML, Java, SQL, C++, DOM, Python, Web Development, Graphic Designing, Illustrator, Photoshop, Premiere Pro, Adobe, Learning, Best, India, Code, Colors, Examples, Tips">
+    <meta name="author" content="Azmal Shaikh">
+    <style>
+        .sth {
+            position: sticky;
+            top: 4rem;
+            bottom: 40rem;
+            z-index: 1000;
+            height: calc(100vh - 4rem);
+        }
+
+        .overflowy {
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+
+        .bg-primary {
+            background-color: rgb(5, 155, 191) !important;
+        }
+
+        .text-primary {
+            color: black !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--   Header -->
+
+    <header>
+        <div class="pt-3 pl-3 d-flex bg-light">
+            <a href="/index.html" style="margin: auto;">
+                <img src="/Images/Code&GraphicsLogo2.png" alt="Code And Graphics Logo" height="70" width="auto" style="padding-bottom: 10px;"/>
+            </a>
+            <!-- <h2 class="text-primary marginauto">CodeAndGraphics </h2> -->
+            <!--
+            <hr>
+            <h6 class=" text-uppercase mr-3 mt-4 text-dark erase">The Complete solution for Coding and Graphic Designing</h6>
+-->
+        </div>
+    </header>
+
+    <!--    Navigation bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-light mr-2" href="/HTML/htmlintroduction.html">HTML<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark mr-2 bg-primary rounded-lg" href="/CSS/learncss.html">CSS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light mr-2" href="/JS/learnjs.html">JavaScript</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light mr-2" href="/Illustrator/LearnAI.html">Illustrator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light mr-2" href="/Photoshop/LearnPSD.html">Photoshop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light mr-2" href="/PremierePro/LearnPP.html">Premiere Pro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light mr-2" href="/Java/learnjava.html">Java</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light mr-2" href="/C++/Learnc.html">C++</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light mr-2" href="/Python/LearnPython.html">Python</a>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle text-light" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Exercises
+                    </a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <p class="dropdown-item font-weight-bold">Web Development Exercises</p>
+                        <a class="dropdown-item " href="#">HTML</a>
+                        <a class="dropdown-item" href="#">CSS</a>
+                        <a class="dropdown-item" href="#">JavaScript</a>
+                        <p class="dropdown-item font-weight-bold ">Programming Practices</p>
+                        <a class="dropdown-item" href="#">Java</a>
+                        <a class="dropdown-item" href="#">C++</a>
+                        <a class="dropdown-item" href="#">Python</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle text-light" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        More
+                    </a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">BootStrap</a>
+                        <a class="dropdown-item " href="#">SQL</a>
+                        <a class="dropdown-item" href="#">React</a>
+                        <a class="dropdown-item" href="#">Angular</a>
+                        <a class="dropdown-item" href="#">XML</a>
+                        <a class="dropdown-item" href="#">JSON</a>
+                        <a class="dropdown-item" href="#">Web Templates</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <!--                <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search">-->
+                <button class="btn btn-outline-primary my-2 my-sm-0 ml-3" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <!--   Main content side -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 col-xl-2 bd-sidebar col-lg-2 d-md-block bg-light sidebar-fixed collapse position-sticky sth">
+
+                <nav class="sidebar-sticky pt-3 overflowy" style="max-height:calc(110vh - 9rem)">
+                    <ul class="nav flex-column">
+
+                        <li class="nav-item m-n1 font-weight-bold nav-link ">
+                            <h3 data-feather="home">CSS</h3>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link" href="learncss.html">
+                                <span data-feather="home"></span>CSS Introduction
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link " href="cssselectors.html">
+                                <span data-feather="home">CSS Selectors</span>
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link " href="csshowto.html">
+                                <span data-feather="home">Add CSS</span>
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link " href="cssbackground.html">
+                                <span data-feather="home">CSS Background</span>
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link " href="cssborder.html">
+                                <span data-feather="home">CSS Border</span>
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link " href="cssmargin.html">
+                                <span data-feather="home">CSS Margin</span>
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link " href="cssmargin.html">
+                                <span data-feather="home">CSS Padding</span>
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link " href="cssoutline.html">
+                                <span data-feather="home">CSS Outline</span>
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link " href="csstext.html">
+                                <span data-feather="home">CSS Text</span>
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link " href="csslinks.html">
+                                <span data-feather="home">CSS Links</span>
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link " href="csslists.html">
+                                <span data-feather="home">CSS Lists</span>
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link " href="cssdisplay.html">
+                                <span data-feather="home">CSS Display</span>
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link " href="cssposition.html">
+                                <span data-feather="home">CSS Position</span>
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link " href="cssheightwidth.html">
+                                <span data-feather="home">CSS Width & Height</span>
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link " href="cssoverflow.html">
+                                <span data-feather="home">CSS Overflow</span>
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link " href="cssfontscolor.html">
+                                <span data-feather="home">CSS Fonts & Colors</span>
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link " href="cssfloatclear.html">
+                                <span data-feather="home">CSS Float & Clear</span>
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link " href="cssflexbox1.html">
+                                <span data-feather="home">CSS FlexBox - 1</span>
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link " href="cssflexbox2.html">
+                                <span data-feather="home">CSS FlexBox - 2</span>
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link " href="cssresponsive.html">
+                                <span data-feather="home">CSS Reponsive</span>
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link active bg-primary text-white rounded-lg" href="csspseudo.html">
+                                <span data-feather="home">CSS Pseudo Selectors</span>
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link " href="cssanimations.html">
+                                <span data-feather="home">CSS Animations</span>
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link " href="csstransform.html">
+                                <span data-feather="home">CSS Transform</span>
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link " href="csstransitions.html">
+                                <span data-feather="home">CSS Transitions</span>
+                            </a>
+                        </li>
+                        <li class="nav-item m-n1">
+                            <a class="nav-link " href="cssgrids.html">
+                                <span data-feather="home">CSS Grids</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <h5 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted ml-n1o">
+                        <span>Key Concepts (Revision)</span>
+                        <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
+                            <span data-feather="plus-circle"></span>
+                        </a>
+                    </h5>
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item m-n1">
+                            <a class="nav-link">
+                                <span data-feather="file-text"></span>
+                                Concepts 1
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">CSS Introduction</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div class="btn-group mr-2">
+                            <a type="button" class="btn btn-lg btn-outline-primary shadow-sm ">Prev &lt;</a>
+                            <a type="button" class="btn btn-lg btn-outline-primary shadow-sm ">Next &gt;</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p style="font-size : 1.3rem">Will Be uploaded soon...</p>
+                </div>
+                <br>
+                <!-- <div class="btn-toolbar mb-2 mb-md-0">
+                    <div class="btn-group mr-2">
+                        <a title="HTML Text Fromatting" type="button" class="btn btn-lg btn-outline-primary shadow-sm " href="htmltextformatting.html">Prev &lt;</a>
+                        <a title="HTML Img & Anchor" type="button" class="btn btn-lg btn-outline-primary shadow-sm " href="htmlimg&anchor.html">Next &gt;</a>
+                    </div>
+                </div> -->
+                <br><br>
+
+                <footer class="page-footer font-small special-color-dark pt-4">
+                    <!-- Footer Elements -->
+                    <div class="container">
+            
+                        <!-- Social buttons -->
+                        <ul class="list-unstyled list-inline text-center" style="color: rgb(5, 155, 191);">
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-tw mx-1" href="https://twitter.com/azmal_shaikh89">
+                                    <i class="fab fa-twitter fa-2x"> </i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-li mx-1" href="https://github.com/azmalshaikh">
+                                    <i class="fab fa-github fa-2x"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-li mx-1" href="https://www.instagram.com/azmal_shaikh89/">
+                                    <i class="fab fa-instagram fa-2x"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- Social buttons -->
+            
+                    </div>
+                    <!-- Footer Elements -->
+            
+                    <!-- Copyright -->
+            
+                    <div class="footer-copyright text-center py-1">
+                        Made with <i class="fas fa-heart text-d text-danger"></i> by Azmal Shaikh
+                    </div>
+            
+                    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                        <a href="https://codeandgraphics.web.app" style="color: rgb(5, 155, 191);">codeandgraphics.web.app</a>
+                    </div>
+                    <!-- Copyright -->
+            
+                </footer>
+            </main>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+
+</html>
